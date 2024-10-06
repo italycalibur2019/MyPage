@@ -3,7 +3,7 @@ $(function() {
     const defaultLang = "en";
     $("[i18n]").i18n({
         defaultLang: defaultLang,
-        filePath: "/i18n/", //注意！要配置好语言文件的正确路径
+        filePath: "/vendor/jquery.i18n/i18n/", //注意！要配置好语言文件的正确路径
         filePrefix: "i18n_",
         fileSuffix: "",
         forever: true,
@@ -15,14 +15,14 @@ $(function() {
     $(".chinese").click(function() {
         $("[i18n]").i18n({
             defaultLang: "zh",
-            filePath: "/i18n/"
+            filePath: "/vendor/jquery.i18n/i18n/"
         });
     });
     /*切换为英文 - 按钮*/
     $(".english").click(function() {
         $("[i18n]").i18n({
             defaultLang: "en",
-            filePath: "/i18n/"
+            filePath: "/vendor/jquery.i18n/i18n/"
         });
     });
 });
