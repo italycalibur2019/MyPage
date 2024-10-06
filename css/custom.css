@@ -1,1 +1,41 @@
 /* your styles go here */
+
+.switch-btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.switch-btn-group .custom-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.switch-btn-group .blue {
+    background-color: #3f00ff;
+}
+
+.switch-btn-group .green {
+    background-color: #4fbfa8;
+}
+
+.switch-btn-group .pink {
+    background-color: #ef5285;
+}
+
+.switch-btn-group .red {
+    background-color: #ff3f3f;
+}
+
+.switch-btn-group .sea {
+    background-color: #87ceeb;
+}
+
+.switch-btn-group .violet {
+    background-color: #9055A2;
+}

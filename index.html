@@ -19,7 +19,12 @@
     <!-- Parallax-->
     <link rel="stylesheet" href="vendor/onepage-scroll/onepage-scroll.css">
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/style.green.css" data-theme="green" title="绿色">
+    <link rel="alternate stylesheet" href="css/style.blue.css" data-theme="blue" disabled title="蓝色">
+    <link rel="alternate stylesheet" href="css/style.pink.css" data-theme="pink" disabled title="粉色">
+    <link rel="alternate stylesheet" href="css/style.red.css" data-theme="red" disabled title="红色">
+    <link rel="alternate stylesheet" href="css/style.sea.css" data-theme="sea" disabled title="浅蓝色">
+    <link rel="alternate stylesheet" href="css/style.violet.css" data-theme="violet" disabled title="紫色">
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
@@ -42,7 +47,25 @@
         </div>
         <div class="scroll-btn link-scroll"><i class="fas fa-angle-double-down"></i></div>
       </section>
-      <section id="1">
+      <section class="bg-gray">
+        <div class="d-flex h-100 align-items-center">
+          <div class="container">
+            <div class="text-center text-theme">
+              <h1 class="text-uppercase my-4">Theme Switch</h1>
+              <p class="font-italic lead">Please select a theme style first.</p>
+            </div>
+            <div class="switch-btn-group">
+              <div class="custom-btn blue" data-theme="blue"></div>
+              <div class="custom-btn green" data-theme="green"></div>
+              <div class="custom-btn pink" data-theme="pink"></div>
+              <div class="custom-btn red" data-theme="red"></div>
+              <div class="custom-btn sea" data-theme="sea"></div>
+              <div class="custom-btn violet" data-theme="violet"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
         <div class="d-flex h-100 align-items-center">
           <div class="container">
             <div class="row align-items-center">
@@ -203,6 +226,7 @@
     <script src="vendor/onepage-scroll/jquery.onepage-scroll.min.js"></script>
     <script src="vendor/lightbox2/js/lightbox.min.js"></script>
     <script src="js/front.js"></script>
+    <script src="js/theme-switch.js"></script>
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </body>
