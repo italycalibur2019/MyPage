@@ -52,14 +52,14 @@ section {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid #87ceeb;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #fff;
+  color: #87ceeb;
   font-size: 0.8rem;
   position: absolute;
   bottom: 3rem;
@@ -73,6 +73,7 @@ section {
 
 .scroll-btn:hover, .scroll-btn:focus {
   color: #fff;
+  border: 2px solid #fff;
   text-decoration: none;
 }
 
@@ -450,7 +451,7 @@ STYLE SWITCHER FOR DEMO
 }
 
 .btn-link:hover {
-  color: #225b5b;
+  color: #4f9fbb;
   text-decoration: underline;
 }
 
@@ -1038,7 +1039,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #225b5b;
+  color: #4f9fbb;
   text-decoration: underline;
 }
 
@@ -1194,7 +1195,7 @@ a.text-primary:hover, a.text-primary:focus {
 
 .page-link:hover {
   z-index: 2;
-  color: #225b5b;
+  color: #4f9fbb;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;

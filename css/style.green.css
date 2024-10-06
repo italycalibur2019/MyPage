@@ -52,14 +52,14 @@ section {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid #4fbfa8;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #fff;
+  color: #4fbfa8;
   font-size: 0.8rem;
   position: absolute;
   bottom: 3rem;
@@ -73,6 +73,7 @@ section {
 
 .scroll-btn:hover, .scroll-btn:focus {
   color: #fff;
+  border: 2px solid #fff;
   text-decoration: none;
 }
 

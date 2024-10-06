@@ -62,3 +62,8 @@
     border: 1px solid #686868;
     color: #fff;
 }
+/** 切换语言相关样式结束 **/
+
+.custom-hr {
+    border:1px dashed #000;
+}
