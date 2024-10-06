@@ -4,7 +4,7 @@ $(function() {
     $("[i18n]").i18n({
         defaultLang: defaultLang,
         //注意！要配置好语言文件的正确路径
-        filePath: "../i18n/",
+        filePath: "/MyPage/i18n/",
         filePrefix: "i18n_",
         fileSuffix: "",
         forever: true,
@@ -17,7 +17,7 @@ $(function() {
         $("[i18n]").i18n({
             defaultLang: "zh",
             //注意！要配置好语言文件的正确路径
-            filePath: "../i18n/"
+            filePath: "/MyPage/i18n/"
         });
     });
     /*切换为英文 - 按钮*/
@@ -25,7 +25,7 @@ $(function() {
         $("[i18n]").i18n({
             defaultLang: "en",
             //注意！要配置好语言文件的正确路径
-            filePath: "../i18n/"
+            filePath: "/MyPage/i18n/"
         });
     });
 });
