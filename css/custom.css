@@ -1,5 +1,6 @@
 /* your styles go here */
 
+/** 切换主题相关样式开始 **/
 .switch-btn-group {
     display: flex;
     justify-content: center;
@@ -38,4 +39,26 @@
 
 .switch-btn-group .violet {
     background-color: #9055A2;
+}
+/** 切换主题相关样式结束 **/
+
+/** 切换语言相关样式开始 **/
+.switch-lang-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.switch-lang-group .lang-btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 20px;
+    user-select: none;
+    cursor: pointer;
+    border: 1px solid #686868;
+    color: #fff;
 }

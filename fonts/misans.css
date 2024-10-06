@@ -1,0 +1,14 @@
+/* chinese-ext */
+@font-face {
+    font-family: 'MiSans';
+    font-style: oblique;
+    font-weight: 400;
+    src: url("/fonts/misans-ttf/MiSans-Regular.ttf");
+}
+/* chinese */
+@font-face {
+    font-family: 'MiSans';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/misans-ttf/MiSans-Regular.ttf");
+}

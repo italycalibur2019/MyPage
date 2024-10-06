@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Screen - Multipurpose Template</title>
-    <meta name="description" content="">
+    <title>Italycalibur - Personal Homepage</title>
+    <meta name="description" content="This is a personal homepage based on html + css + js">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
@@ -29,30 +29,23 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.png">
+    <!-- Chinese Font -->
+    <link rel="stylesheet" href="fonts/misans.css">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
     <div class="main">
-      <section class="bg-cover bg-center hero">
-        <div class="dark-overlay"></div>
-        <div class="position-relative z-index-1">
-          <div class="container text-center text-white">
-            <p class="font-italic lead">Oh, hello, nice to meet you!</p>
-            <h1 class="text-uppercase my-4">My name is screen</h1>
-            <p class="font-italic lead">I am a nice scrolling template prepared for portfolio, telling stories and short presentations.</p>
-            <p class="font-italic lead">I have best results with nice pictures on the background or nice colours.</p>
-          </div>
-        </div>
-        <div class="scroll-btn link-scroll"><i class="fas fa-angle-double-down"></i></div>
-      </section>
-      <section class="bg-gray">
+      <section class="bg-cover bg-center cxk">
         <div class="d-flex h-100 align-items-center">
           <div class="container">
             <div class="text-center text-theme">
-              <h1 class="text-uppercase my-4">Theme Switch</h1>
-              <p class="font-italic lead">Please select a theme style first.</p>
+              <p class="font-italic lead" i18n="section_0.title">Please select the theme and language first for a better access experience</p>
+            </div>
+            <div class="text-center text-theme">
+              <h1 class="text-uppercase my-4" i18n="section_0.theme.h1">Theme Switch</h1>
+              <p class="font-italic lead" i18n="section_0.theme.p">Select a theme style you like.</p>
             </div>
             <div class="switch-btn-group">
               <div class="custom-btn blue" data-theme="blue"></div>
@@ -62,8 +55,28 @@
               <div class="custom-btn sea" data-theme="sea"></div>
               <div class="custom-btn violet" data-theme="violet"></div>
             </div>
+            <div class="text-center text-theme">
+              <h1 class="text-uppercase my-4" i18n="section_0.lang.h1">Language Switch</h1>
+              <p class="font-italic lead" i18n="section_0.lang.p">Select a language you need.</p>
+            </div>
+            <div class="switch-lang-group">
+              <div class="lang-btn chinese">切换为中文</div>
+              <div class="lang-btn english">Switch to English</div>
+            </div>
           </div>
         </div>
+      </section>
+      <section class="bg-cover bg-center hero">
+        <div class="dark-overlay"></div>
+        <div class="position-relative z-index-1">
+          <div class="container text-center text-white">
+            <p class="font-italic lead" i18n="section_1.title.p1">Oh, hello, nice to meet you!</p>
+            <h1 class="text-uppercase my-4" i18n="section_1.title.h1">Welcome to my homepage</h1>
+            <p class="font-italic lead" i18n="section_1.title.p2">You can click on the link below to enter my blog (under construction)</p>
+            <a class="font-italic lead" href="http://italycalibur.top" i18n="section_1.title.a">Enter the blog</a>
+          </div>
+        </div>
+        <div class="scroll-btn link-scroll"><i class="fas fa-angle-double-down"></i></div>
       </section>
       <section>
         <div class="d-flex h-100 align-items-center">
@@ -222,11 +235,13 @@
     </div>
     <!-- JavaScript files-->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery.i18n/jquery.i18n.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/onepage-scroll/jquery.onepage-scroll.min.js"></script>
     <script src="vendor/lightbox2/js/lightbox.min.js"></script>
     <script src="js/front.js"></script>
     <script src="js/theme-switch.js"></script>
+    <script src="js/init_i18n.js"></script>
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </body>
