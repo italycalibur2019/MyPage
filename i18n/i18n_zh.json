@@ -4,11 +4,17 @@
   "section_0.theme.p": "选择你喜欢的主题。",
   "section_0.lang.h1": "切换语言",
   "section_0.lang.p": "选择你喜欢的语言。",
-  "section_1.title.p1": "噢，你好，很高兴见到你！",
+  "section_0.tip1":"蓝色",
+  "section_0.tip2":"绿色",
+  "section_0.tip3":"粉色",
+  "section_0.tip4":"红色",
+  "section_0.tip5":"浅蓝色",
+  "section_0.tip6":"紫色",
+  "section_1.title.p1": "你好呀，很高兴见到你！",
   "section_1.title.h1": "欢迎访问我的主页",
   "section_1.title.p2": "你可以点击下面的链接进入我的博客（建设中）",
   "section_1.title.a": "进入博客",
-  "section_2.title": "关于我",
+  "section_2.title": "个人简介",
   "section_2.intro1": "毕业于重庆邮电大学空间信息与数字技术专业，已从业一年。",
   "section_2.intro2": "熟悉Java编程语言，且熟悉Mysql、Postgres、Sql Server等数据库，同时对基于Html+CSS+JS的前端开发有一定了解。",
   "section_2.col1": "姓名：邓皓仁",
@@ -16,5 +22,6 @@
   "section_2.col3": "出生日期：2000年6月27日",
   "section_2.col4": "居住地：重庆市大渡口区",
   "section_2.col5": "学历：本科",
-  "section_2.col6": "邮箱：italycalibur233@163.com"
+  "section_2.col6": "邮箱：italycalibur233@163.com",
+  "section_3.title": "我的爱好"
 }

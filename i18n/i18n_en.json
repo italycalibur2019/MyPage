@@ -4,6 +4,12 @@
   "section_0.theme.p": "Select a theme style you like.",
   "section_0.lang.h1": "Language Switch",
   "section_0.lang.p": "Select a language you like.",
+  "section_0.tip1":"blue",
+  "section_0.tip2":"green",
+  "section_0.tip3":"pink",
+  "section_0.tip4":"red",
+  "section_0.tip5":"sea",
+  "section_0.tip6":"violet",
   "section_1.title.p1": "Oh, hello, nice to meet you!",
   "section_1.title.h1": "Welcome to my homepage",
   "section_1.title.p2": "You can click on the link below to enter my blog (under construction)",
@@ -16,5 +22,6 @@
   "section_2.col3": "Birthday: 2000/6/27",
   "section_2.col4": "Residence: Chongqing, Dadukou",
   "section_2.col5": "Education: Bachelor degree",
-  "section_2.col6": "Email: italycalibur233@163.com"
+  "section_2.col6": "Email: italycalibur233@163.com",
+  "section_3.title": "Hobbies"
 }

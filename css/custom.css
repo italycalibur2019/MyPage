@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 32px;
+    margin-bottom: 64px;
 }
 
 .switch-btn-group .custom-btn {
@@ -40,6 +41,71 @@
 .switch-btn-group .violet {
     background-color: #9055A2;
 }
+
+/* 悬停触发动画效果 */
+.custom-btn:hover {
+    animation: buttonAnimation 0.7s cubic-bezier(0.17, 0.67, 0.72, 1.53);
+}
+/* 动画效果实现 */
+@keyframes buttonAnimation {
+    0%, 30% {
+        transform: scale(1.5, 0.5);
+    }
+    30%, 40% {
+        transform: scale(1.3, 1);
+    }
+    30%, 50% {
+        transform: scale(1, 1.3);
+    }
+    50%, 70% {
+        transform: scale(1.2, 1);
+    }
+    70%, 90% {
+        transform: scale(1, 1.2);
+    }
+    90%, 100% {
+        transform: scale(1, 1);
+    }
+}
+
+/** 悬停提示 **/
+.custom-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-tooltip .tooltip-text {
+    visibility: hidden;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* 定位 */
+    position: absolute;
+    z-index: 1;
+    /* 显示在底部 */
+    top: 100%;
+    left: 50%;
+    margin-left: -30px; /* 使用一半宽度来居中提示工具 */
+}
+
+.custom-tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+.custom-tooltip .tooltip-text::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; /* 提示工具顶部 */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.6) transparent;
+}
 /** 切换主题相关样式结束 **/
 
 /** 切换语言相关样式开始 **/
@@ -51,19 +117,30 @@
 }
 
 .switch-lang-group .lang-btn {
+    font-weight: 400;
+    font-family: "Montserrat","MiSans", sans-serif;
+    text-transform: uppercase;
+    border: 1px solid;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    border-radius: 10px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     width: 150px;
     height: 50px;
-    border-radius: 10px;
-    text-align: center;
-    line-height: 50px;
     margin: 0 20px;
     user-select: none;
     cursor: pointer;
-    border: 1px solid #686868;
-    color: #fff;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .lang-btn {
+        transition: none;
+    }
 }
 /** 切换语言相关样式结束 **/
 
+/** 虚线 **/
 .custom-hr {
     border:1px dashed #000;
 }
