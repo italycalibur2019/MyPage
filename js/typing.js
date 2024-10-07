@@ -22,7 +22,7 @@ function autoTyping(e) {
         /*切换为中文*/
         $(".chinese").click(function() {
             lang = 'zh';
-            $.getJSON('/i18n/i18n_'+lang+'.json', function(data) {
+            $.getJSON('/MyPage/i18n/i18n_'+lang+'.json', function(data) {
                 const attr = element.getAttribute('i18n');
                 text = data[attr];
                 index = 0;
@@ -31,7 +31,7 @@ function autoTyping(e) {
         /*切换为英文*/
         $(".english").click(function() {
             lang = 'en';
-            $.getJSON('/i18n/i18n_'+lang+'.json', function(data) {
+            $.getJSON('/MyPage/i18n/i18n_'+lang+'.json', function(data) {
                 const attr = element.getAttribute('i18n');
                 text = data[attr];
                 index = 0;
