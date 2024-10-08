@@ -11,7 +11,6 @@
         i18n: function(options) {
             var defaults = {
                 lang: "",
-                rootPath: "",
                 defaultLang: "",
                 filePath: "/i18n/",
                 filePrefix: "i18n_",
@@ -56,7 +55,7 @@
             };
 
             var i = this;
-            $.getJSON(options.rootPath?options.rootPath:"" + options.filePath + options.filePrefix + options.lang + options.fileSuffix + ".json", function(data) {
+            $.getJSON(options.filePath + options.filePrefix + options.lang + options.fileSuffix + ".json", function(data) {
                 var i18nLang = {};
                 if (data != null) {
                     i18nLang = data;

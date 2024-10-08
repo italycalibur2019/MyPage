@@ -1,14 +1,13 @@
 /*默认语言*/
 const defaultLang = "en";
 /*默认路径*/
-const defaultPath = "/i18n/";
+const defaultPath = "/MyPage/i18n/";
 
 let currentLang = undefined;
 
 $(function() {
     $("[i18n]").i18n({
         defaultLang: defaultLang,
-        rootPath: "/MyPage",
         //注意！要配置好语言文件的正确路径
         filePath: defaultPath,
         filePrefix: "i18n_",
