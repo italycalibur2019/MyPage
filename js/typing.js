@@ -6,31 +6,13 @@ let index = 0;
 
 let timer = undefined;
 
-let lang = undefined;
-
 $(function () {
     autoTyping(element);
 });
 
 function autoTyping(e) {
-    if (!lang) {
-        lang = 'en';
-    }
     if (!text) {
         text = e.innerHTML;
-    }else {
-        /*切换为中文*/
-        $(".chinese").click(function() {
-            lang = 'zh';
-            text = '欢迎访问我的主页';
-            index = 0;
-        });
-        /*切换为英文*/
-        $(".english").click(function() {
-            lang = 'en';
-            text = 'Welcome to my homepage';
-            index = 0;
-        });
     }
     if (index <= text.length) {
         e.innerHTML = text.slice(0, index++) + "_";
@@ -39,6 +21,11 @@ function autoTyping(e) {
         }
     }else {
         e.innerHTML = text;
+        if (currentLang === 'en') {
+            text = 'Welcome to my homepage';
+        }else if (currentLang === 'zh') {
+            text = '欢迎访问我的主页';
+        }
         index = 0;
     }
 }
