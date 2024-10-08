@@ -22,20 +22,14 @@ function autoTyping(e) {
         /*切换为中文*/
         $(".chinese").click(function() {
             lang = 'zh';
-            $.getJSON('/MyPage/i18n/i18n_'+lang+'.json', function(data) {
-                const attr = element.getAttribute('i18n');
-                text = data[attr];
-                index = 0;
-            });
+            text = '欢迎访问我的主页';
+            index = 0;
         });
         /*切换为英文*/
         $(".english").click(function() {
             lang = 'en';
-            $.getJSON('/MyPage/i18n/i18n_'+lang+'.json', function(data) {
-                const attr = element.getAttribute('i18n');
-                text = data[attr];
-                index = 0;
-            });
+            text = 'Welcome to my homepage';
+            index = 0;
         });
     }
     if (index <= text.length) {
