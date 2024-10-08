@@ -24,14 +24,16 @@ $(function() {
     $(".chinese").click(function() {
         currentLang = 'zh';
         $("[i18n]").i18n({
-            defaultLang: currentLang
+            defaultLang: currentLang,
+            filePath: defaultPath
         });
     });
     /*切换为英文 - 按钮*/
     $(".english").click(function() {
         currentLang = 'en';
         $("[i18n]").i18n({
-            defaultLang: currentLang
+            defaultLang: currentLang,
+            filePath: defaultPath
         });
     });
 });
